@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query-Selector</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 20%;
+        }
+        #btn{
+            border-radius: 25%;
+            padding: 10px;
+            background: linear-gradient(to bottom,red,blue,yellow);
+            color: white;
+            font-weight: bolder;
+            outline: none;
+        }
+        .e1{
+            margin-left: 35%;
+            margin-right: 35%;
+            border-radius: 25px;        }
+    </style>
+</head>
+<body style="background-color: grey;text-align: center;">
+    <h2 class="e1">Can you Change my Background Color...!</h2>
+    <button id="btn" onclick="myFunction()">I Can Change Your Background Color...<br>Click Me</button><br>
+    <p id="e2" style="font-weight: bold;"></p>
+
+    <p style="font-weight: bold;">&copy; Chandrashekhar | JS</p>
+
+    <script>
+        function myFunction(){
+            document.querySelector(".e1").style.backgroundColor = "red";
+            document.getElementById(".e1").innerHTML = "Yes.., I Change Your Background Color.."; 
+        }
+    </script>
+</body>
+</html>
